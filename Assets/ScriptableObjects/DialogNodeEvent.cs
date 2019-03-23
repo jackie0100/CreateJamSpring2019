@@ -6,7 +6,7 @@ using UnityEngine.Events;
 
 
 [CreateAssetMenu(menuName = "ScriptableObjects/Dialog Event")]
-public class DialogEvent : DialogNode
+public class DialogNodeEvent : DialogNode
 {
     [SerializeField]
     UnityEvent _onDialogEvent;

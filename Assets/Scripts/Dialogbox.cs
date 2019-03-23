@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,22 +11,35 @@ public class Dialogbox : MonoBehaviour
     [SerializeField]
     Text _dialogTextBot;
     [SerializeField]
+    Image _picker;
+    [SerializeField]
     float _displaySpeed = 0.02f;
 
-    [Multiline]
-    [SerializeField]
-    string _displayText;
+    //Please dont kill me :(
+    public static Dialogbox instance;
+
+    DialogNode _node;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        StartCoroutine(WriteText(_displayText));
+        instance = this;
     }
 
-    // Update is called once per frame
-    void Update()
+    public void StartDialogTree(DialogNode node)
     {
-        
+        _node = node;
+        BeginWriteText(_node.GetDisplayText(StartDialogTree));
+    }
+
+    public void BeginWriteText(string displayText)
+    {
+        StartCoroutine(WriteText(displayText));
+    }
+
+    public void OptionSelect(DialogOptionsNode dialogOptionsNode)
+    {
+        throw new NotImplementedException();
     }
 
     IEnumerator WriteText(string displayText)
@@ -44,7 +58,8 @@ public class Dialogbox : MonoBehaviour
             textFont.GetCharacterInfo(charset[i], out charinfo, fontsize);
             textLenght += charinfo.advance;
             var test = GetComponent<RectTransform>();
-            if ((textLenght >= GetComponent<RectTransform>().rect.width || charset[i] == '\n') && computeTopDialog)
+            var test2 = transform;
+            if ((textLenght >= GetComponent<RectTransform>().rect.width - 100 || charset[i] == '\n') && computeTopDialog)
             {
                 computeTopDialog = false;
 
@@ -57,9 +72,9 @@ public class Dialogbox : MonoBehaviour
                     textLenght = charinfo.advance;
                 }
             }
-            else if ((textLenght >= GetComponent<RectTransform>().rect.width || charset[i] == '\n') && !computeTopDialog)
+            else if ((textLenght >= GetComponent<RectTransform>().rect.width - 100 || charset[i] == '\n') && !computeTopDialog)
             {
-                yield return new WaitUntil(() => { return AdvanceDialog(); });
+                yield return new WaitUntil(() => { return ShouldAdvanceText(); });
 
                 if (charset[i] == ' ' || charset[i] == '\n')
                 {
@@ -70,14 +85,18 @@ public class Dialogbox : MonoBehaviour
                     textLenght = charinfo.advance;
                 }
             }
+            if (charset[i] == '\n')
+                continue;
 
             if (computeTopDialog)
             {
                 _dialogTextTop.text += charset[i];
+                yield return new WaitForSeconds(_displaySpeed);
             }
             else
             {
                 _dialogTextBot.text += charset[i];
+                yield return new WaitForSeconds(_displaySpeed);
             }
         }
 
@@ -86,9 +105,10 @@ public class Dialogbox : MonoBehaviour
         gameObject.SetActive(false);
         _dialogTextTop.text = "";
         _dialogTextBot.text = "";
+        _node.AdvanceDialogTree();
     }
 
-    private bool AdvanceDialog()
+    private bool ShouldAdvanceText()
     {
         bool keypressed = Input.GetKeyDown(KeyCode.E);
         if (keypressed)

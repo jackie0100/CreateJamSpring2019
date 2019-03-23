@@ -10,3 +10,5 @@ Temp/
 obj/Debug/
 
 \.vs/CreateJamSpring2019/v15/
+
+*.csproj

@@ -4,6 +4,6 @@ using UnityEditor;
 using UnityEngine;
 
 [CreateAssetMenu(menuName = "ScriptableObjects/Dialog Talk")]
-public class DialogTalk : DialogNode
+public class DialogTalkNode : DialogNode
 {
 }
