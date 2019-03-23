@@ -48,7 +48,7 @@ public class Dialogbox : MonoBehaviour
         float textLenght = 0;
         var charinfo = new CharacterInfo();
         char[] charset = displayText.ToCharArray();
-        int fontsize = _dialogTextBot.fontSize;
+        int fontsize = _dialogTextBot.cachedTextGenerator.fontSizeUsedForBestFit;
         bool computeTopDialog = true;
 
         gameObject.SetActive(true);
