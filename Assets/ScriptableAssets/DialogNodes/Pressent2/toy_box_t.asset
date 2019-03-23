@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8baef972e8286d4f92031bd9455f961, type: 3}
   m_Name: toy_Box_t
   m_EditorClassIdentifier: 
-  _dialogText: 
+  _dialogText: "\u201CCaptain Quack is leading his brave crew to conquer the tyrant
+    of the box, One-Eye Mr. Mittens.\u201D\n\u201CMr. Mittens was his second-favourite.\u201D"
   _childNode: {fileID: 0}
   parentNode: {fileID: 0}

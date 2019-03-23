@@ -10,9 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8baef972e8286d4f92031bd9455f961, type: 3}
-  m_Name: homework_Papers_t
+  m_Name: trophy_t
   m_EditorClassIdentifier: 
-  _dialogText: '*The assignment is still unfinished. Looks like most of the papers
-    ended up in the trash.*'
+  _dialogText: '*Number 1 Son.*'
   _childNode: {fileID: 0}
   parentNode: {fileID: 0}

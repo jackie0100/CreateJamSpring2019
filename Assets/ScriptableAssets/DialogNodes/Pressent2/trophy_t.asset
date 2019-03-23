@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8baef972e8286d4f92031bd9455f961, type: 3}
   m_Name: trophy_t
   m_EditorClassIdentifier: 
-  _dialogText: 
+  _dialogText: "\u201CI was so proud of him when he won this trophy. But then he started
+    hanging out with them\u2026\u201D"
   _childNode: {fileID: 0}
   parentNode: {fileID: 0}

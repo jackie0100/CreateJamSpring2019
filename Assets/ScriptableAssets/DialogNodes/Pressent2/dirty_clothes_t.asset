@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8baef972e8286d4f92031bd9455f961, type: 3}
   m_Name: dirty_clothes_t
   m_EditorClassIdentifier: 
-  _dialogText: 
+  _dialogText: "\u201CHe really should have learned how to clean his clothes.\u201D"
   _childNode: {fileID: 0}
   parentNode: {fileID: 0}

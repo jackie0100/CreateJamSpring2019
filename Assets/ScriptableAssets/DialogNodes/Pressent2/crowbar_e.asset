@@ -12,7 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b741f37ee8d53054caf0df3edc1704a9, type: 3}
   m_Name: crowbar_e
   m_EditorClassIdentifier: 
-  _dialogText: 
+  _dialogText: "\u201CI still can't believe he would do something like that. Maybe
+    he lashed out because I was too hard on him\u2026\u201D"
   _childNode: {fileID: 0}
   parentNode: {fileID: 0}
   _onDialogEvent:
