@@ -12,5 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8baef972e8286d4f92031bd9455f961, type: 3}
   m_Name: Intro
   m_EditorClassIdentifier: 
-  _dialogText: Hello There!
-  _nextNode: {fileID: 11400000, guid: 9882cc0e6da339e42ba2bf410f55e2a5, type: 2}
+  _dialogText: Hello There! test pest
+  _childNode: {fileID: 0}
+  parentNode: {fileID: 11400000, guid: 9de3e4067e533554fb97dc54213ed515, type: 2}

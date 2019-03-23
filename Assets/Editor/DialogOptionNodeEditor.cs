@@ -15,5 +15,7 @@ public class DialogOptionsNodeEditor : DialogNodeEditor
         EditorGUILayout.PropertyField(serializedObject.FindProperty("_childNode"));
 
         EditorGUILayout.PropertyField(serializedObject.FindProperty("_dialogOptions"), includeChildren: true);
+
+        serializedObject.ApplyModifiedProperties();
     }
 }

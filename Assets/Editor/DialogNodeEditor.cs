@@ -26,5 +26,7 @@ public class DialogNodeEditor : Editor
                 Selection.activeObject = item.ParentNode;
             }
         }
+
+        serializedObject.ApplyModifiedProperties();
     }
 }
