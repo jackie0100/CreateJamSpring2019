@@ -6,3 +6,7 @@ Logs/
 Temp/ProcessJobs/
 
 Temp/
+
+obj/Debug/
+
+\.vs/CreateJamSpring2019/v15/
