@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8baef972e8286d4f92031bd9455f961, type: 3}
   m_Name: m1.4
   m_EditorClassIdentifier: 
-  _dialogText: 
+  _dialogText: "Radical Mom: \u201CI understand just fine. You\u2019re grounded.\u201D"
   _childNode: {fileID: 0}
   parentNode: {fileID: 0}

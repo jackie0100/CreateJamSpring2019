@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8baef972e8286d4f92031bd9455f961, type: 3}
-  m_Name: s3.10
+  m_Name: cups
   m_EditorClassIdentifier: 
-  _dialogText: "Son: \u201COkay mom. Can I hold my own party on my birthday then?\u201D"
+  _dialogText: '"..."'
   _childNode: {fileID: 0}
   parentNode: {fileID: 0}

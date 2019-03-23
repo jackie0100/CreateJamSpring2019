@@ -10,10 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b741f37ee8d53054caf0df3edc1704a9, type: 3}
-  m_Name: New Dialog Eventtest
+  m_Name: homework_papers_E
   m_EditorClassIdentifier: 
-  _dialogText: 
-  _nextNode: {fileID: 0}
+  _dialogText: "*Scattered papers litter the desk.*\n\u201CHe never finished his last
+    assignment. He used to be so good at balancing his homework and hobbies when he
+    was younger. Whatever happened to that?\u201D"
+  _childNode: {fileID: 0}
+  parentNode: {fileID: 0}
   _onDialogEvent:
     m_PersistentCalls:
       m_Calls: []

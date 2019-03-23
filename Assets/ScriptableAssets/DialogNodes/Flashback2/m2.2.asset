@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8baef972e8286d4f92031bd9455f961, type: 3}
   m_Name: m2.2
   m_EditorClassIdentifier: 
-  _dialogText: 
+  _dialogText: "Radical Mom: \u201CHe\u2019s not only sneaking out, but trespassing
+    too? I must get him!\u201D"
   _childNode: {fileID: 0}
   parentNode: {fileID: 0}

@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8baef972e8286d4f92031bd9455f961, type: 3}
   m_Name: m3.4
   m_EditorClassIdentifier: 
-  _dialogText: 
+  _dialogText: "Radical Mom: \u201CI\u2019m only doing so to look after you! You could
+    get hurt out there!\u201D\r"
   _childNode: {fileID: 0}
   parentNode: {fileID: 0}

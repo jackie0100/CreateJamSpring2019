@@ -10,8 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d8baef972e8286d4f92031bd9455f961, type: 3}
-  m_Name: s3.10
+  m_Name: trophy_t
   m_EditorClassIdentifier: 
-  _dialogText: "Son: \u201COkay mom. Can I hold my own party on my birthday then?\u201D"
+  _dialogText: "\u201CThe trophy he won in the youngsters skating contest. It says
+    \u201CNumber 1 Skater\u201D on it. He gave me a drawing that said \u201CNumber
+    1 Mom\u201D the day after.\u201D"
   _childNode: {fileID: 0}
   parentNode: {fileID: 0}
