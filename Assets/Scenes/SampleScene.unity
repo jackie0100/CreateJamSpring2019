@@ -205,6 +205,12 @@ MonoBehaviour:
   _dialogTextTop: {fileID: 1516458031}
   _dialogTextBot: {fileID: 696875821}
   _displaySpeed: 0.02
+  _displayText: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+    nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+    fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+    culpa qui officia deserunt mollit anim id est laborum.
 --- !u!1 &344141254
 GameObject:
   m_ObjectHideFlags: 0
@@ -472,7 +478,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &696875822
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -842,7 +848,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: 
 --- !u!222 &1516458032
 CanvasRenderer:
   m_ObjectHideFlags: 0
