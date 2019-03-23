@@ -15,5 +15,5 @@ MonoBehaviour:
   _dialogText: "Radical Mom: \u201CWhat?! You saw my son sneak into the construction
     site? But he\u2019s grounded! Thank you for telling me Ms. Weatherbee, I\u2019ll
     take care of it!\u201D"
-  _childNode: {fileID: 0}
+  _childNode: {fileID: 11400000, guid: b4dc251a871fc5544b55e46fd081104f, type: 2}
   parentNode: {fileID: 0}
