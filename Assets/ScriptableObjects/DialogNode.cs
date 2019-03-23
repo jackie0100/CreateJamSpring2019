@@ -67,17 +67,6 @@ public abstract class DialogNode : ScriptableObject
         OnNodeEndedEvent += callback;
         return _dialogText;
     }
-
-    public virtual bool ShouldAdvanceText()
-    {
-        bool keypressed = Input.GetKeyDown(KeyCode.E);
-        if (keypressed)
-        {
-            _dialogTextTop.text = _dialogTextBot.text;
-            _dialogTextBot.text = "";
-        }
-        return keypressed;
-    }
 }
 
 public delegate void NodeEndedEvent(DialogNode node);
