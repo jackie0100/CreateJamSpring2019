@@ -7,6 +7,8 @@ using UnityEngine.UI;
 public class Dialogbox : MonoBehaviour
 {
     [SerializeField]
+    GameObject wrapper;
+    [SerializeField]
     Text _dialogTextTop;
     [SerializeField]
     Text _dialogTextBot;
@@ -29,7 +31,16 @@ public class Dialogbox : MonoBehaviour
     public void StartDialogTree(DialogNode node)
     {
         _node = node;
-        BeginWriteText(_node.GetDisplayText(StartDialogTree));
+        if (_node.DialogText.Length == 0)
+        {
+            _node.AdvanceDialogTree();
+        }
+        else
+        {
+            BeginWriteText(_node.GetDisplayText(StartDialogTree));
+        }
+
+
     }
 
     public void BeginWriteText(string displayText)
@@ -51,7 +62,7 @@ public class Dialogbox : MonoBehaviour
         int fontsize = _dialogTextBot.cachedTextGenerator.fontSizeUsedForBestFit;
         bool computeTopDialog = true;
 
-        gameObject.SetActive(true);
+        wrapper.SetActive(true);
 
         for (int i = 0; i < displayText.Length; i++)
         {
@@ -102,7 +113,7 @@ public class Dialogbox : MonoBehaviour
 
         yield return new WaitUntil(() => { return Input.GetKeyDown(KeyCode.E); });
 
-        gameObject.SetActive(false);
+        wrapper.SetActive(false);
         _dialogTextTop.text = "";
         _dialogTextBot.text = "";
         _node.AdvanceDialogTree();

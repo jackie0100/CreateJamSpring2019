@@ -9,9 +9,9 @@ using UnityEngine.Events;
 public class DialogNodeEvent : DialogNode
 {
     [SerializeField]
-    UnityEvent _onDialogEvent;
+    GameEvent _onDialogEvent;
 
-    public UnityEvent OnDialogEvent
+    public GameEvent OnDialogEvent
     {
         get
         {
@@ -22,5 +22,17 @@ public class DialogNodeEvent : DialogNode
         {
             _onDialogEvent = value;
         }
+    }
+
+    public override string GetDisplayText(NodeEndedEvent callback)
+    {
+        OnNodeEndedEvent += callback;
+        return _dialogText;
+    }
+
+    public override void AdvanceDialogTree()
+    {
+
+        base.AdvanceDialogTree();
     }
 }
