@@ -70,7 +70,7 @@ public class Dialogbox : MonoBehaviour
             textLenght += charinfo.advance;
             var test = GetComponent<RectTransform>();
             var test2 = transform;
-            if ((textLenght >= GetComponent<RectTransform>().rect.width - 100 || charset[i] == '\n') && computeTopDialog)
+            if ((textLenght >= GetComponent<RectTransform>().rect.width - 120 || charset[i] == '\n') && computeTopDialog)
             {
                 computeTopDialog = false;
 

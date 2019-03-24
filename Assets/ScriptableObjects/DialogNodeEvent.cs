@@ -26,6 +26,7 @@ public class DialogNodeEvent : DialogNode
 
     public override string GetDisplayText(NodeEndedEvent callback)
     {
+        _onDialogEvent.Invoke();
         OnNodeEndedEvent += callback;
         return _dialogText;
     }
