@@ -15,5 +15,5 @@ MonoBehaviour:
   _dialogText: "Radical Mom: \u201CWhat?! You saw my son sneak out to a max radical
     rave party? But he\u2019s underage! Thank you for telling me Miss Bloom, I\u2019ll
     take care of it!\u201D"
-  _childNode: {fileID: 0}
+  _childNode: {fileID: 11400000, guid: 44e5f623549b8fb48a2f960cedf4a0f7, type: 2}
   parentNode: {fileID: 0}
