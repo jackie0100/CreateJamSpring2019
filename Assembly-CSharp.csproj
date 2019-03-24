@@ -128,11 +128,13 @@
     <Compile Include="Assets\ScriptableObjects\Vector3Ref.cs" />
     <Compile Include="Assets\ScriptableObjects\Vector3RefEvent.cs" />
     <Compile Include="Assets\Scripts\activateOnLoad.cs" />
+    <Compile Include="Assets\Scripts\BoyMove.cs" />
     <Compile Include="Assets\Scripts\Dialogbox.cs" />
     <Compile Include="Assets\Scripts\Flicker.cs" />
     <Compile Include="Assets\Scripts\GameEventListener.cs" />
     <Compile Include="Assets\Scripts\GameManager.cs" />
     <Compile Include="Assets\Scripts\Goal.cs" />
+    <Compile Include="Assets\Scripts\GoldenMove.cs" />
     <Compile Include="Assets\Scripts\Hazard.cs" />
     <Compile Include="Assets\Scripts\InteractableDialogObject.cs" />
     <Compile Include="Assets\Scripts\InteractableObject.cs" />
@@ -149,6 +151,7 @@
     <Compile Include="Assets\Scripts\PlayerInteract.cs" />
     <Compile Include="Assets\Scripts\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
+    <Compile Include="Assets\Scripts\ResetLevel.cs" />
     <Compile Include="Assets\Scripts\SceneChanger.cs" />
     <Compile Include="Assets\Scripts\ShootingTrap.cs" />
     <Compile Include="Assets\Scripts\Tiles\Animated Tile\Scripts\AnimatedTile.cs" />
