@@ -15,4 +15,4 @@ MonoBehaviour:
   _dialogText: 
   _childNode: {fileID: 0}
   parentNode: {fileID: 11400000, guid: d6ff7ecfb265e124da483d177140ed1d, type: 2}
-  _onDialogEvent: {fileID: 11400000, guid: e9a08e27cc80d8c428e87581606a63f4, type: 2}
+  _onDialogEvent: {fileID: 11400000, guid: e4aaf8c2e21475d47b3c842bbe1d155e, type: 2}
