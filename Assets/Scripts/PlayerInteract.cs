@@ -48,9 +48,9 @@ public class PlayerInteract : MonoBehaviour
         {
             _lookDir = new Vector2(x, y);
 
-            RaycastHit2D hit = Physics2D.Raycast((Vector2)transform.position + Vector2.down, _lookDir, 1, _mask);
+            RaycastHit2D hit = Physics2D.Raycast((Vector2)transform.position, _lookDir, 1, _mask);
             Debug.Log(hit.transform);
-            if (hit != null && hit.transform.GetComponent<IInteractable>() != null)
+            if (hit.transform != null && hit.transform.GetComponent<IInteractable>() != null)
             {
                 hit.transform.GetComponent<IInteractable>().Interact();
             }
