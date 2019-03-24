@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: homework_papers_E
   m_EditorClassIdentifier: 
   _dialogText: 
-  _childNode: {fileID: 0}
+  _childNode: {fileID: 11400000, guid: ffddc0c19589f4b439d8ad06eef32d48, type: 2}
   parentNode: {fileID: 11400000, guid: d6ff7ecfb265e124da483d177140ed1d, type: 2}
-  _onDialogEvent: {fileID: 11400000, guid: e4aaf8c2e21475d47b3c842bbe1d155e, type: 2}
+  _onDialogEvent: {fileID: 11400000, guid: baf80c347d726cb4bb83b66daabf6ebf, type: 2}

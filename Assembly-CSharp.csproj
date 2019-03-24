@@ -128,6 +128,7 @@
     <Compile Include="Assets\ScriptableObjects\Vector3Ref.cs" />
     <Compile Include="Assets\ScriptableObjects\Vector3RefEvent.cs" />
     <Compile Include="Assets\Scripts\activateOnLoad.cs" />
+    <Compile Include="Assets\Scripts\CanvasFader.cs" />
     <Compile Include="Assets\Scripts\Dialogbox.cs" />
     <Compile Include="Assets\Scripts\Flicker.cs" />
     <Compile Include="Assets\Scripts\GameEventListener.cs" />
