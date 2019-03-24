@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogText: "Radical Mom: \u201CHe\u2019s not only sneaking out, but trespassing
     too? I must get him!\u201D"
-  _childNode: {fileID: 11400000, guid: b025ad2cb1492de4c86aec455e0d7fc3, type: 2}
+  _childNode: {fileID: 11400000, guid: adecc456ce888fb47b60f0ffd20311b2, type: 2}
   parentNode: {fileID: 11400000, guid: 18d5ba75b4590e84e8b5daff6adbcf9f, type: 2}

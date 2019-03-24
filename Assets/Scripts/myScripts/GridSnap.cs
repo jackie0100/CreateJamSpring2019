@@ -10,6 +10,11 @@ public class GridSnap : MonoBehaviour
     public int speed = 5;
     private Rigidbody2D rb2d;
 
+    [SerializeField]
+    GameEvent _event;
+
+    bool firsttrigger = true;
+
     void Awake()
     {
         rb2d = GetComponent<Rigidbody2D>();
@@ -28,6 +33,15 @@ public class GridSnap : MonoBehaviour
             transform.Translate(0, -GridMovement, 0);
             downCount++;
             upCount--;
-        } 
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.transform.name == "son" && firsttrigger)
+        {
+            firsttrigger = false;
+            _event.Invoke();
+        }
     }
 }
