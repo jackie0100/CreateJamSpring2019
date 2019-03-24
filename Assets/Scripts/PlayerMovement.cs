@@ -48,6 +48,9 @@ public class PlayerMovement : MonoBehaviour
 
     void FixedUpdate()
     {
+        if (Dialogbox.instance.IsDisplaying)
+            return;
+
         rb2d.velocity = new Vector2(Mathf.Lerp(0, Input.GetAxis("Horizontal") * speedMultiplier, 0.8f),
                                     Mathf.Lerp(0, Input.GetAxis("Vertical") * speedMultiplier, 0.8f));
     }

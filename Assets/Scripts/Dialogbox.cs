@@ -22,6 +22,11 @@ public class Dialogbox : MonoBehaviour
 
     DialogNode _node;
 
+    public bool IsDisplaying
+    {
+        get { return wrapper.activeSelf; }
+    }
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -111,7 +116,7 @@ public class Dialogbox : MonoBehaviour
             }
         }
 
-        yield return new WaitUntil(() => { return Input.GetKeyDown(KeyCode.E); });
+        yield return new WaitUntil(() => { return Input.GetKeyDown(KeyCode.Space); });
 
         wrapper.SetActive(false);
         _dialogTextTop.text = "";
@@ -121,7 +126,7 @@ public class Dialogbox : MonoBehaviour
 
     private bool ShouldAdvanceText()
     {
-        bool keypressed = Input.GetKeyDown(KeyCode.E);
+        bool keypressed = Input.GetKeyDown(KeyCode.Space);
         if (keypressed)
         {
             _dialogTextTop.text = _dialogTextBot.text;

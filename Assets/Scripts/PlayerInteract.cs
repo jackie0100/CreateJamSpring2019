@@ -44,16 +44,16 @@ public class PlayerInteract : MonoBehaviour
             y = 0;
         }
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (!Dialogbox.instance.IsDisplaying && Input.GetKeyDown(KeyCode.Space))
         {
             _lookDir = new Vector2(x, y);
 
-            RaycastHit2D hit = Physics2D.Raycast(transform.position, _lookDir, 5, _mask);
-            if (hit.transform.GetComponent<IInteractable>() != null)
+            RaycastHit2D hit = Physics2D.Raycast((Vector2)transform.position + Vector2.down, _lookDir, 1, _mask);
+            Debug.Log(hit.transform);
+            if (hit != null && hit.transform.GetComponent<IInteractable>() != null)
             {
                 hit.transform.GetComponent<IInteractable>().Interact();
             }
-        Debug.DrawRay(transform.position, _lookDir, Color.red);
         }
     }
 }
