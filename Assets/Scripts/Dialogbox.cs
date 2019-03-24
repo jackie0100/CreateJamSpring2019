@@ -56,7 +56,7 @@ public class Dialogbox : MonoBehaviour
         float textLenght = 0;
         var charinfo = new CharacterInfo();
         char[] charset = displayText.ToCharArray();
-        int fontsize = _dialogTextBot.cachedTextGenerator.fontSizeUsedForBestFit;
+        int fontsize = _dialogTextBot.fontSize;
         bool computeTopDialog = true;
 
         wrapper.SetActive(true);
@@ -64,33 +64,39 @@ public class Dialogbox : MonoBehaviour
         for (int i = 0; i < displayText.Length; i++)
         {
             textFont.GetCharacterInfo(charset[i], out charinfo, fontsize);
-            textLenght += charinfo.advance;
+            textLenght += 24;
             var test = GetComponent<RectTransform>();
             var test2 = transform;
-            if ((textLenght >= GetComponent<RectTransform>().rect.width - 240 || charset[i] == '\n') && computeTopDialog)
+            if ((textLenght >= GetComponent<RectTransform>().rect.width || charset[i] == '\n') && computeTopDialog)
             {
-                computeTopDialog = false;
+                if (charset[i] == ' ')
+                {
+                    computeTopDialog = false;
 
-                if (charset[i] == ' ' || charset[i] == '\n')
-                {
-                    textLenght = 0;
-                }
-                else
-                {
-                    textLenght = charinfo.advance;
+                    if (charset[i] == ' ' || charset[i] == '\n')
+                    {
+                        textLenght = 0;
+                    }
+                    else
+                    {
+                        textLenght = charinfo.advance;
+                    }
                 }
             }
-            else if ((textLenght >= GetComponent<RectTransform>().rect.width - 240 || charset[i] == '\n') && !computeTopDialog)
+            else if ((textLenght >= GetComponent<RectTransform>().rect.width || charset[i] == '\n') && !computeTopDialog)
             {
-                yield return new WaitUntil(() => { return ShouldAdvanceText(); });
+                if (charset[i] == ' ')
+                {
+                    yield return new WaitUntil(() => { return ShouldAdvanceText(); });
 
-                if (charset[i] == ' ' || charset[i] == '\n')
-                {
-                    textLenght = 0;
-                }
-                else
-                {
-                    textLenght = charinfo.advance;
+                    if (charset[i] == ' ' || charset[i] == '\n')
+                    {
+                        textLenght = 0;
+                    }
+                    else
+                    {
+                        textLenght = charinfo.advance;
+                    }
                 }
             }
             if (charset[i] == '\n')
@@ -127,3 +133,4 @@ public class Dialogbox : MonoBehaviour
         return keypressed;
     }
 }
+
