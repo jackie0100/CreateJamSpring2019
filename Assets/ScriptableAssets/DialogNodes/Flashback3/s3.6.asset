@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: s3.6
   m_EditorClassIdentifier: 
   _dialogText: "Son: \u201CI just need room to be myself, mom.\u201D"
-  _childNode: {fileID: 0}
-  parentNode: {fileID: 0}
+  _childNode: {fileID: 11400000, guid: 41e8c6f1cf81c92488656276a870532a, type: 2}
+  parentNode: {fileID: 11400000, guid: 06651203b2a2bb14fae1e406302786af, type: 2}

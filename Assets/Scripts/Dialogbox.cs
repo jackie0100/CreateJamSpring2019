@@ -36,16 +36,8 @@ public class Dialogbox : MonoBehaviour
     public void StartDialogTree(DialogNode node)
     {
         _node = node;
-        if (_node.DialogText.Length == 0)
-        {
-            _node.AdvanceDialogTree();
-        }
-        else
-        {
-            BeginWriteText(_node.GetDisplayText(StartDialogTree));
-        }
 
-
+        BeginWriteText(_node.GetDisplayText(StartDialogTree));
     }
 
     public void BeginWriteText(string displayText)
@@ -75,7 +67,7 @@ public class Dialogbox : MonoBehaviour
             textLenght += charinfo.advance;
             var test = GetComponent<RectTransform>();
             var test2 = transform;
-            if ((textLenght >= GetComponent<RectTransform>().rect.width - 120 || charset[i] == '\n') && computeTopDialog)
+            if ((textLenght >= GetComponent<RectTransform>().rect.width - 240 || charset[i] == '\n') && computeTopDialog)
             {
                 computeTopDialog = false;
 
@@ -88,7 +80,7 @@ public class Dialogbox : MonoBehaviour
                     textLenght = charinfo.advance;
                 }
             }
-            else if ((textLenght >= GetComponent<RectTransform>().rect.width - 100 || charset[i] == '\n') && !computeTopDialog)
+            else if ((textLenght >= GetComponent<RectTransform>().rect.width - 240 || charset[i] == '\n') && !computeTopDialog)
             {
                 yield return new WaitUntil(() => { return ShouldAdvanceText(); });
 

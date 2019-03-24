@@ -9,15 +9,12 @@ EditorBuildSettings:
     path: Assets/Scenes/bedroomScene.unity
     guid: acb61172129ee154cab02360e981a98d
   - enabled: 1
-    path: Assets/Scenes/lvl1.unity
-    guid: 724b357d1b44b964cb7d2bfb92f94142
-  - enabled: 1
-    path: Assets/Scenes/lvl2.unity
-    guid: cf7ba234b55986d408871fb38524967b
-  - enabled: 1
-    path: Assets/Scenes/lvl3.unity
-    guid: a8cf8e9f705442744bcf996cc0edcb6f
-  - enabled: 1
     path: Assets/Scenes/Present2.unity
     guid: 921921a677482fe4dbe56fb340621ff8
+  - enabled: 1
+    path: Assets/Scenes/Present3.unity
+    guid: 93994f330d474ce49bd0a18762a743b6
+  - enabled: 1
+    path: Assets/Scenes/lvl1.unity
+    guid: 724b357d1b44b964cb7d2bfb92f94142
   m_configObjects: {}

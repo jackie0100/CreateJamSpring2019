@@ -15,5 +15,5 @@ MonoBehaviour:
   _dialogText: "Radical Mom: \u201CI\u2026 I\u2019m sorry, son. I didn\u2019t realize
     how overprotective I was being. It feels like yesterday you were just my little
     baby boy. Maybe I\u2019m the one who needs to grow up.\u201D"
-  _childNode: {fileID: 0}
-  parentNode: {fileID: 0}
+  _childNode: {fileID: 11400000, guid: b2ccfaeab036bf1428ddf4eb7d0b00e6, type: 2}
+  parentNode: {fileID: 11400000, guid: e9df3dc9a9de340488fc24de9c0d8495, type: 2}

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: m3.6
   m_EditorClassIdentifier: 
   _dialogText: "Radical Mom: \u201CI\u2026\u201D"
-  _childNode: {fileID: 0}
-  parentNode: {fileID: 0}
+  _childNode: {fileID: 11400000, guid: e9df3dc9a9de340488fc24de9c0d8495, type: 2}
+  parentNode: {fileID: 11400000, guid: 8da164db44fd0344e9ecf07e0f113e65, type: 2}

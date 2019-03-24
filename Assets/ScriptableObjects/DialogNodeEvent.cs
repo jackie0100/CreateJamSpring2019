@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-
-
 [CreateAssetMenu(menuName = "ScriptableObjects/Dialog Event")]
 public class DialogNodeEvent : DialogNode
 {

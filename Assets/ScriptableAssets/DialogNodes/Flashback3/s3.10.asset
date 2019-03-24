@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: s3.10
   m_EditorClassIdentifier: 
   _dialogText: "Son: \u201COkay mom. Can I hold my own party on my birthday then?\u201D"
-  _childNode: {fileID: 0}
-  parentNode: {fileID: 0}
+  _childNode: {fileID: 11400000, guid: 8c58049948ec20b4da263650fc13e000, type: 2}
+  parentNode: {fileID: 11400000, guid: f8605c0929a78d64ab5f0d0caca600ef, type: 2}

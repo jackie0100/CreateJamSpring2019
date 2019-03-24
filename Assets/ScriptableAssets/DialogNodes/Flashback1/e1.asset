@@ -10,9 +10,9 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b741f37ee8d53054caf0df3edc1704a9, type: 3}
-  m_Name: cup_e
+  m_Name: e1
   m_EditorClassIdentifier: 
   _dialogText: 
-  _childNode: {fileID: 11400000, guid: 6e161ceae98a95944b8ff2b974c73efb, type: 2}
-  parentNode: {fileID: 11400000, guid: 8257e9691f6da8849a2797d901420a3f, type: 2}
-  _onDialogEvent: {fileID: 11400000, guid: baf80c347d726cb4bb83b66daabf6ebf, type: 2}
+  _childNode: {fileID: 0}
+  parentNode: {fileID: 11400000, guid: 8a61e868ec63c244d8ca4d3619dd6ff6, type: 2}
+  _onDialogEvent: {fileID: 11400000, guid: e4aaf8c2e21475d47b3c842bbe1d155e, type: 2}
