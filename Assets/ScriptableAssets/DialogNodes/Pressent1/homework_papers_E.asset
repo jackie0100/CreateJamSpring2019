@@ -12,9 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b741f37ee8d53054caf0df3edc1704a9, type: 3}
   m_Name: homework_papers_E
   m_EditorClassIdentifier: 
-  _dialogText: "*Scattered papers litter the desk.*\n\u201CHe never finished his last
-    assignment. He used to be so good at balancing his homework and hobbies when he
-    was younger. Whatever happened to that?\u201D"
+  _dialogText: 
   _childNode: {fileID: 0}
-  parentNode: {fileID: 0}
-  _onDialogEvent: {fileID: 0}
+  parentNode: {fileID: 11400000, guid: d6ff7ecfb265e124da483d177140ed1d, type: 2}
+  _onDialogEvent: {fileID: 11400000, guid: e9a08e27cc80d8c428e87581606a63f4, type: 2}

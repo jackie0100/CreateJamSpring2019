@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8baef972e8286d4f92031bd9455f961, type: 3}
+  m_Name: homework_paper_t
+  m_EditorClassIdentifier: 
+  _dialogText: "*Scattered papers litter the desk.*\n\u201CHe never finished his last
+    assignment. He used to be so good at balancing his homework and hobbies when he
+    was younger. Whatever happened to that?\u201D"
+  _childNode: {fileID: 11400000, guid: e4557a13944993844ac223c8a3d90120, type: 2}
+  parentNode: {fileID: 0}
