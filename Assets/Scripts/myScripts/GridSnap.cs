@@ -6,7 +6,7 @@ public class GridSnap : MonoBehaviour
 {
     int upCount = 1;
     int downCount = 1;
-    float movement = 1.8f;
+    public float GridMovement = 1.8f;
     public int speed = 5;
     private Rigidbody2D rb2d;
 
@@ -21,11 +21,11 @@ public class GridSnap : MonoBehaviour
         rb2d.velocity = new Vector2(transform.localScale.x * speed, rb2d.velocity.y);
 
         if (Input.GetKeyDown("w") && upCount < 2) {
-            transform.Translate(0, movement, 0);
+            transform.Translate(0, GridMovement, 0);
             upCount++;
             downCount--;
         } else if (Input.GetKeyDown("s") && downCount < 2) {
-            transform.Translate(0, -movement, 0);
+            transform.Translate(0, -GridMovement, 0);
             downCount++;
             upCount--;
         } 
