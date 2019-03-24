@@ -10,5 +10,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e965db1d404640a4cb0e84ea897ba114, type: 3}
-  m_Name: flashback1_Initial
+  m_Name: SceneChanger
   m_EditorClassIdentifier: 
