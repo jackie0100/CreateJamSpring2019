@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogText: "Radical Mom: \u201CYeah, you can go my son. And I\u2019ll lay off
     so you can have fun at home too.\u201D"
-  _childNode: {fileID: 0}
-  parentNode: {fileID: 0}
+  _childNode: {fileID: 11400000, guid: 5f6d54e54ef547342a9b6713fd6eafa8, type: 2}
+  parentNode: {fileID: 11400000, guid: b2ccfaeab036bf1428ddf4eb7d0b00e6, type: 2}

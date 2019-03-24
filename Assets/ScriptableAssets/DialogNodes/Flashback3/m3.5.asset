@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogText: "Radical Mom: \u201CThat doesn\u2019t mean you can skip school and
     trespass young man! I--\u201D"
-  _childNode: {fileID: 0}
-  parentNode: {fileID: 0}
+  _childNode: {fileID: 11400000, guid: 8da164db44fd0344e9ecf07e0f113e65, type: 2}
+  parentNode: {fileID: 11400000, guid: 0d73c417a29c9e948b3c1f55cc48ae17, type: 2}

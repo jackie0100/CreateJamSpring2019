@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: m3.10
   m_EditorClassIdentifier: 
   _dialogText: "Radical Mom: \u201CBut you still can\u2019t drink until you turn 18.\u201D"
-  _childNode: {fileID: 0}
-  parentNode: {fileID: 0}
+  _childNode: {fileID: 11400000, guid: b75288be7d576ea46a7e709df00014d6, type: 2}
+  parentNode: {fileID: 11400000, guid: 7ebef309502ee4c4a94c3a4e39689754, type: 2}

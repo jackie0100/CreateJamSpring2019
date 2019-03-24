@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: s3.7
   m_EditorClassIdentifier: 
   _dialogText: "Son: \u201CDoes that mean I can go?\u201D"
-  _childNode: {fileID: 0}
-  parentNode: {fileID: 0}
+  _childNode: {fileID: 11400000, guid: f934fa99c7e31c84597f1851eafd7a33, type: 2}
+  parentNode: {fileID: 11400000, guid: 41e8c6f1cf81c92488656276a870532a, type: 2}

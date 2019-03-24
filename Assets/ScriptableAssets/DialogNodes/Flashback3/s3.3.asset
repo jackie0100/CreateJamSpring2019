@@ -14,5 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _dialogText: "Son: \u201CCut it off mom! I\u2019m not a baby anymore! You don\u2019t
     have to run around chasing me all the time!\u201D"
-  _childNode: {fileID: 0}
-  parentNode: {fileID: 0}
+  _childNode: {fileID: 11400000, guid: 8b5cc71be1de2d645a8ab5398ac6f286, type: 2}
+  parentNode: {fileID: 11400000, guid: 8862d2193f4829843be6b731a4a11b23, type: 2}
