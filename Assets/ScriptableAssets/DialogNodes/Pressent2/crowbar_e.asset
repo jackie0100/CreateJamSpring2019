@@ -12,12 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b741f37ee8d53054caf0df3edc1704a9, type: 3}
   m_Name: crowbar_e
   m_EditorClassIdentifier: 
-  _dialogText: "\u201CI still can't believe he would do something like that. Maybe
-    he lashed out because I was too hard on him\u2026\u201D"
+  _dialogText: 
   _childNode: {fileID: 0}
-  parentNode: {fileID: 0}
-  _onDialogEvent:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
+  parentNode: {fileID: 11400000, guid: 046df98cc644a314f9abc4d92a18d7b5, type: 2}
+  _onDialogEvent: {fileID: 0}
